@@ -1,13 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roozbeh Hooman - Resume</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
     
+    <script src="https://cdn.tailwindcss.com"></script>
+   
     <style>
       body {
         color: #333;
@@ -34,11 +33,6 @@
         font-weight: bold;
       }
 
-      .institution {
-        margin-top: 20px;
-        margin-bottom: 5px;
-      }
-
       a {
         text-decoration: none;
         color: inherit;
@@ -47,361 +41,345 @@
       a:hover {
         text-decoration: underline;
       }
-      
-      .carousel-item {
-        height: 350px;
-        background-color: #555;
-      }
-      .carousel-item img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        opacity: 0.7;
-      }
+    </style>
+</head>
 
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
+<body class="bg-light font-vazir">
 
-      .carousel-caption h5,
-      .carousel-caption p {
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-      }
-
-        </style>
-  </head>
-
-  <body class="bg-light">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top justify-content-center">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">روزبه هومن</a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#work">سوابق</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">مهارت‌ها</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#edu">تحصیلات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">پروژه‌ها</a>
-                </li>
-            </ul>
+    <nav class="bg-gray-800 mx-auto sticky top-0">
+        <div class="flex items-center justify-center h-20 text-gray-300 w-full">
+            <a href="#projects" class="text-xl p-3">پروژه‌ها</a>
+            <a href="#education" class="text-xl p-3">تحصیلات</a>
+            <a href="#" class="text-3xl p-3 text-white">روزبه هومن</a>
+            <a href="#job" class="text-xl p-3">سوابق</a>
+            <a href="#skills" class="text-xl p-3">مهارت‌ها</a>
         </div>
     </nav>
- 
-    <div id="demo" class="carousel slide" data-ride="carousel">
 
-    <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./03.png" alt="EDA">
-            <div class="carousel-caption">
-                <h3>تحلیل داده!</h3>
-                <p>تحلیل اکتشافی داده‌ها (EDA) در زبان پایتون </p>
-            </div>
+<div id="demo" class="relative" data-ride="carousel">
+      <div class="relative w-full overflow-hidden h-[350px] bg-gray-700">
+        <div class="carousel-inner relative w-full h-full">
+          <div class="carousel-item active w-full h-full">
+            <img src="./03.png" class="w-full h-full object-cover opacity-70">
+            <!-- <div class="carousel-caption absolute bottom-10 inset-x-0 text-white text-center p-4">
+              <h3 class_="text-2xl font-bold">تحلیل داده!</h3>
+              <p>تحلیل اکتشافی داده‌ها (EDA) در زبان پایتون</p>
+            </div> -->
+          </div>
         </div>
-        <div class="carousel-item">
-        <img src="./02.png" alt="EDA">
-            <div class="carousel-caption">
-                <h3>یادگیری ماشین!</h3>
-                <p>طراحی pipeline و مدل‌های یادگیری ماشین برای تحلیل و پیشبینی داده‌ها </p>
-            </div>
-        </div>
-        <div class="carousel-item">
-        <img src="./01.png" alt="EDA">
-            <div class="carousel-caption">
-                <h3>رزومه!</h3>
-                <p>ساخت یک رزومه آنلاین به کمک Bootstrap 4 </p>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </a>
-
-    </div>
-    <div class="container my-5">
-        <div class="row align-items-center mb-4">
-            <div class="col-md-7">
-                <h1> روزبه هومن </h1>
-                <p> من برنامه‌نویس و علاقه‌مند به یادگیری ماشین و تحلیل داده هستم. با تمرکز بر توسعه مهارت‌های فنی و حل مسأله، به دنبال استفاده از دانشم برای ایجاد راهکارهای نوآورانه و مؤثر در حوزه فناوری اطلاعات هستم. علاقه خاصی به آموزش و انتقال دانش دارم و همواره در پی یادگیری و به‌روزرسانی مهارت‌هایم برای پاسخگویی به چالش‌های دنیای واقعی هستم. هدفم استفاده از توانایی‌هایم برای دستیابی به فرصت‌های شغلی پایدار و رشد حرفه‌ای در محیطی پویا و فعال است. </p>
-            </div>
-            <div class="col-md-5">
-              <div class="card shadow-sm border-0 rounded-3">
-                <div class="card-body">
-                    <h3 class="card-title h5">اطلاعات تماس</h3>
-                    <ul class="list-unstyled mb-0">
+    <!-- <div class="flex flex-col min-h-screen"> -->
+        
+        <div class="flex flex-col w-[80%] p-10 mx-auto gap-16">
+            <div class="flex flex-row justify-center gap-16 my-5">
+                <div class="flex flex-col ">
+                    <h1 class="text-3xl font-bold"> روزبه هومن </h1>
+                    <p class="mt-5 text-2xl"> من برنامه‌نویس و علاقه‌مند به یادگیری ماشین و تحلیل داده هستم. با تمرکز بر توسعه مهارت‌های فنی و حل مسأله، به دنبال استفاده از دانشم برای ایجاد راهکارهای نوآورانه و مؤثر در حوزه فناوری اطلاعات هستم. علاقه خاصی به آموزش و انتقال دانش دارم و همواره در پی یادگیری و به‌روزرسانی مهارت‌هایم برای پاسخگویی به چالش‌های دنیای واقعی هستم. هدفم استفاده از توانایی‌هایم برای دستیابی به فرصت‌های شغلی پایدار و رشد حرفه‌ای در محیطی پویا و فعال است. </p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="border-b-2 border-[#333] pb-[8px] text-3xl font-bold">اطلاعات تماس</h3>
+                    <ul class="mt-5 text-2xl">
                         <li><a href="mailto:roozbeh1312@gmail.com" class="text-decoration-none">Roozbeh1312@gmail.com</a></li>
                         <li><a href="https://github.com/roozman" class="text-decoration-none"> گیت‌هاب</a></li>
                         <li><a href="https://www.linkedin.com/in/roozbeh-hooman" class="text-decoration-none"> لینکدین</a></li>
                         <li>989123456789+</li>
                     </ul>
                 </div>
-              </div>
-          </div>
-        </div>
-        
-        <div id="work" class="work">
-        <h2> سوابق تدریس </h2>
-        
-        <div class="row g-4">
-            
-            <div class="col-md-6">
-                 <div class="institution">
-                    <h3 class="my-4"> سازمان ملی پرورش استعدادهای درخشان </h3>
-                    
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title"> دبیرستان علامه حلی 7 دوره اول - مربی پژوهشی کامپیوتر (1403-1405) </div>
-                        <div class="card-body">
-                            <ul class="mb-0">
-                                <li>آموزش مبانی برنامه‌نویسی پایتون و تفکر خالقانه</li>
-                                <li>آموزش و آماده سازی تیم‌های دانش‌آموزان پایه هفتم، هشتم و نهم برای مسابقات رباتیک در لیگ شبیه ساز RCJSoccerSim</li>
-                                <li>منتورینگ دانش‌آموزان در جهت ساخت پروژه های پژوهشی و علمی</li>
-                            </ul>
+            </div>
+            <div class="flex flex-col w-full" id="skills">
+                <div class="flex">
+                    <h1 class="text-3xl font-bold w-full">مهارت‌ها</h1>
+                </div>
+                <div class="flex w-full p-3 gap-16">
+                    <div class="flex flex-col flex-1">
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">پایتون و علم داده (Pandas & Numpy)</span>
+                                <span class="text-lg font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-blue-600 h-4 rounded-full w-[90%]"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">یادگیری ماشین</span>
+                                <span class="text-lg font-medium">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-green-600 h-4 rounded-full w-[75%]"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">مصورسازی داده‌ها</span>
+                                <span class="text-lg font-medium">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-red-600 h-4 rounded-full w-[70%]"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">یادگیری عمیق (Tensorflow & Keras)</span>
+                                <span class="text-lg font-medium">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-stone-600 h-4 rounded-full w-[50%]"
+                                ></div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title"> دبیرستان علامه حلی 7 دوره دوم - دبیر ریاضیات برنامه نویسی و طراح طرح درس رشته کامپیوتر و نرم افزار (1401-1402) </div>
-                        <div class="card-body">
-                            <ul class="mb-0">
-                                <li>طراحی و تدریس درس «ریاضیات برنامه‌نویسی» ویژه ی رشته‌ی کامپیوتر و نرم‌افزار</li>
-                                <li> آموزش مبانی جبر خطی، مبانی مصورسازی داده‌ها و مباحث آمار و احتمال مرتبط با تحلیل داده و یادگیری ماشین</li>
-                            </ul>
+                    <div class="flex flex-col flex-1">
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">Git</span>
+                                <span class="text-lg font-medium">50%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-blue-600 h-4 rounded-full w-[50%]"
+                                ></div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card shadow-sm mb-3 rounded-3">
-                         <div class="card-header title"> دبیرستان علامه حلی 10 دوره دوم - دبیر پژوهشی علم داده (1400-1401) </div>
-                         <div class="card-body">
-                            <ul class="mb-0">
-                                <li>طراحی و برگزاری دوره ی مقدماتی علم داده با محوریت پایتون</li>
-                                <li>آموزش مباحث پردازش داده، آمار توصیفی، مصورسازی داده‌ها، معرفی کتابخانه‌های Pandas و NumPy و کاربرد آن‌ها در تحلیل داده و مفاهیم یادگیری ماشین</li>
-                            </ul>
-                         </div>
-                    </div>
-                    
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title">دبیرستان علامه حلی 7 دوره دوم - دبیر کامپیوتر رشته کامپیوتر و نرم افزار (1400-1401)</div>
-                        <div class="card-body"><ul class="mb-0">
-                                <li>آموزش مبانی برنامه نویسی و تفکر الگوریتمی</li>
-                                <li>آموزش مبانی برنامه نویسی پایتون و مفاهیم شی گرایی</li>
-                            </ul></div>
-                    </div>
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title">دبیرستان علامه حلی 7 دوره دوم - مربی پژوهشی کامپیوتر (1399-1400)</div>
-                        <div class="card-body"><ul class="mb-0">
-                                <li>آموزش HTML و CSS و طراحی صفحات پویا به کمک فریمورک ReactJS</li>
-                                <li>منتورینگ دانش‌آموزان در مسیر طراحی و ساخت یک وب‌سایت</li>
-                            </ul></div>
-                    </div>
-                     <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title">دبیرستان علامه حلی 7 دوره دوم - مربی پژوهشی کامپیوتر (1398-1399)</div>
-                        <div class="card-body"><ul class="mb-0">
-                                <li>تدریس زبان برنامه‌نویسی ++C</li>
-                                <li>منتورینگ پروژه‌های دانش‌آموزان جهت شرکت در نمایشگاه داخلی مدرسه</li>
-                            </ul></div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">Linux</span>
+                                <span class="text-lg font-medium">35%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-green-600 h-4 rounded-full w-[35%]"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-lg font-medium">HTML, CSS, JS</span>
+                                <span class="text-lg font-medium">30%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-red-600 h-4 rounded-full w-[30%]"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <div class="flex justify-between mt-5">
+                                <span class="text-m font-medium">Golang</span>
+                                <span class="text-m font-medium">10%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div
+                                    class="bg-stone-600 h-4 rounded-full w-[10%]"
+                                ></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
-            
-            <div class="col-md-6">
-                <div class="institution">
-                    <h3 class="my-4">دانشگاه تهران</h3>
-                    
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title"> دانشگاه تهران، دانشکده جغرافیا - برگزارکننده و مدرس دوره برنامه نویسی پایتون (1401) </div>
-                         <div class="card-body">
-                            <ul class="mb-0">
-                                <li>آموزش مبانی یادگیری ماشین و برنامه‌نویسی پایتون، با تمرکز بر مدل‌های پایه یادگیری ماشین و کار با کتابخانه‌های Pandas و NumPy برای دانشجویان رشته جغرافیا در دانشگاه تهران</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <div class="card shadow-sm mb-3 rounded-3">
-                        <div class="card-header title"> دانشگاه تهران، دانشکده جغرافیا - برگزارکننده و مدرس دوره مقدمات یادگیری ماشین (1401) </div>
-                        <div class="card-body">
-                            <ul class="mb-0">
-                                <li>تدریس مبانی ریاضیات و آمار مقدماتی با رویکرد کاربردی در یادگیری ماشین، شامل مفاهیم احتمال، آمار توصیفی، ماتریس‌ها، مشتق‌گیری و تحلیل داده، ویژه‌   ی دانشجویان رشته جغرافیا دانشگاه تهران</li>
+            <div class="flex flex-row gap-8" id="education">
+                <div class="flex flex-col w-full">
+                    <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                        <div class="py-6 px-10">
+                            <h2 class="text-xl font-bold mb-2">سوابق تحصیلی</h2>
+                            <ul class="list-disc">
+                                <li class="text-gray-700 text-lg font-bold">مهندسی کامپیوتر - دانشگاه آزاد اسلامی واحد تهران جنوب (در حال تحصیل-1404)</li>
+                                <li class="text-gray-700 text-lg font-bold">آمار - دانشگاه تهران (1397-1401)</li>
+                                <li class="text-gray-700 text-lg font-bold">ریاضی و فیزیک - دبیرستان علامه حلی 7 (1393-1397)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-      </div>
-      <div class="education" id="edu">
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm rounded-3">
-                    <div class="card-header"><h2 class="mt-0 mb-0 h4">سوابق تحصیلی</h2></div>
-                    <div class="card-body schools">
-                        <ul>
-                            <li>مهندسی کامپیوتر - دانشگاه آزاد اسلامی واحد تهران جنوب (در حال تحصیل-1404)</li>
-                            <li>آمار - دانشگاه تهران (1397-1401)</li>
-                            <li>ریاضی و فیزیک - دبیرستان علامه حلی 7 (1393-1397)</li>
-                        </ul>
+                <div class="flex flex-col w-full">
+                    <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                        <div class="py-6 px-10">
+                            <h2 class="text-xl font-bold mb-2"> مدارک مرتبط</h2>
+                            <ul class="list-disc">
+                                <li class="text-gray-700 text-lg font-bold">مهندسی یادگیری ماشین - DataTalks</li>
+                                <li class="text-gray-700 text-lg font-bold">ریاضیات تخصصی یادگیری ماشین - Coursera - Imperial College of London</li>
+                                <li class="text-gray-700 text-lg font-bold">آنالیز داده پیشرفته - Google - Coursera</li>
+                                <li class="text-gray-700 text-lg font-bold">آنالیز داده با پایتون - IBM - Courser</li>
+                                <li class="text-gray-700 text-lg font-bold">آموزش جامع یادگیری عمیق(Deep Learning) با Tensorflow و keras - مکتب خونه</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                 <div class="card h-100 shadow-sm rounded-3">
-                    <div class="card-header"><h2 class="mt-0 mb-0 h4">مدارک مرتبط</h2></div>
-                    <div class="card-body certificates">
-                        <ul>
-                            <li>مهندسی یادگیری ماشین - DataTalks</li>
-                            <li>ریاضیات تخصصی یادگیری ماشین - Coursera - Imperial College of London</li>
-                            <li>آنالیز داده پیشرفته - Google - Coursera</li>
-                            <li>آنالیز داده با پایتون - IBM - Courser</li>
-                        </ul>
+
+            <div class="flex flex-col" id="projects">
+                <h1 class="text-3xl font-bold"> نمونه کار </h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white flex flex-col">
+                            <div class="py-6 px-10 flex flex-col flex-grow">
+                                <h2 class="text-xl font-bold mb-2"> پیشبینی میزان آلایندگی CO2 خودروها </h2>
+                                <ul class="list-disc flex flex-col flex-grow">
+                                    <li class="text-gray-700 text-lg font-bold">توسعهٔ یک سیستم پیش‌بینی CO₂ خودروها با استفاده از داده‌های واقعی اروپا (نمونهٔ لهستان)</li>
+                                    <li class="text-gray-700 text-lg font-bold">انجام پاک‌سازی داده، انتخاب ویژگی، مقیاس‌بندی و رمزگذاری ترکیبی (Target Encoding و One-Hot)</li>
+                                    <li class="text-gray-700 text-lg font-bold">ارزیابی مدل‌ها و انتخاب LGBMRegressor به‌عنوان مدل نهایی همراه با بهینه‌سازی GridSearchCV</li>
+                                    <li class="text-gray-700 text-lg font-bold">پیاده‌سازی سرویس FastAPI برای ارائهٔ پیش‌بینی‌ها و آماده‌سازی اجرای پروژه با Docker</li>
+                                    <li class="text-gray-700 text-lg font-bold">استقرار نسخهٔ آنلاین سرویس روی Render برای دسترسی مستقیم از طریق API</li>
+                                </ul>
+                                <a href="https://github.com/roozman/newCarsCO2EmissionsPoland"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-900 transition my-3 w-full justify-center mt-6">
+                                    <img src="./github.png" class="w-10 h-10 object-contain">
+                                    <span class="text-lg">برو به گیت هاب </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white flex flex-col">
+                            <div class="py-6 px-10 flex flex-col flex-grow">
+                                <h2 class="text-xl font-bold mb-2"> مصورسازی داده‌های تولید ناخالص کشورها </h2>
+                                <ul class="list-disc flex flex-col flex-grow">
+                                    <li class="text-gray-700 text-lg font-bold"> پاک سازی داده‌ها و مصورسازی به کمک کتابخانه‌های Seaborn و Matplotlib</li>
+                                    <li class="text-gray-700 text-lg font-bold">ساخت نمودارهای خطی، میله‌ای و نقشه‌های گرمایی برای نمایش رشد اقتصادی، مقایسه بین کشورها و شناسایی الگوهای نوسان GDP</li>
+                                    <li class="text-gray-700 text-lg font-bold">تحلیل ترندها و تغییرات GDP</li>
+                                </ul>
+                                <a href="https://github.com/roozman/newCarsCO2EmissionsPoland"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-900 transition my-3 w-full justify-center mt-6">
+                                    <img src="./github.png" class="w-10 h-10 object-contain">
+                                    <span class="text-lg">برو به گیت هاب </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white flex flex-col">
+                            <div class="py-6 px-10 flex flex-col flex-grow">
+                                <h2 class="text-xl font-bold mb-2"> تحلیل پتانسیل بهره‌برداری از انرژی‌های پاک </h2>
+                                <ul class="list-disc flex flex-col flex-grow">
+                                    <li class="text-gray-700 text-lg font-bold">تحلیل پتانسیل تولید انرژی‌های خورشیدی و بادی </li>
+                                    <li class="text-gray-700 text-lg font-bold">تحلیل ارتباط بین داده‌های خورشیدی و بادی با یکدیگر</li>
+                                    <li class="text-gray-700 text-lg font-bold">پاک‌سازی، مدیریت مقادیر گم‌شده، انتخاب ویژگی‌های موثر، و نرمال‌سازی داده‌ها با استفاده از متدهای پیشرفته (مثل StandardScaler و MinMaxScaler)</li>
+                                    <li class="text-gray-700 text-lg font-bold">مقایسه مدل‌های مختلف (XGBoost، Random Forest، LSTM) و انتخاب بهترین مدل با استفاده از معیارهای RMSE و MAE بهینه‌سازی هایپرپارامترها با GridSearchCV و RandomizedSearchCV</li>
+                                </ul>
+                                <a href="https://github.com/roozman/newCarsCO2EmissionsPoland"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-gray-500 text-white rounded-lg shadow hover:bg-gray-900 transition my-3 w-full justify-center mt-6">
+                                    <img src="./github.png" class="w-10 h-10 object-contain">
+                                    <span class="text-lg">برو به گیت هاب </span>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+
+            <div class="flex flex-col" id="job">
+                <h1 class="text-3xl font-bold"> سوابق تدریس </h1>
+                <div class="flex flex-row w-full">
+                    <div class="flex flex-col w-full p-5 gap-8">
+                        <p class="text-2xl font-bold mt-5">سازمان ملی پرورش استعدادهای درخشان</p>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 7 دوره اول - مربی پژوهشی کامپیوتر (1403-1405)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">آموزش مبانی برنامه‌نویسی پایتون و تفکر خالقانه</li>
+                                        <li class="text-gray-700 text-lg font-bold">آموزش و آماده سازی تیم‌های دانش‌آموزان پایه هفتم، هشتم و نهم برای مسابقات رباتیک در لیگ شبیه ساز RCJSoccerSim</li>
+                                        <li class="text-gray-700 text-lg font-bold">منتورینگ دانش‌آموزان در جهت ساخت پروژه های پژوهشی و علمی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 7 دوره دوم - دبیر ریاضیات برنامه نویسی و طراح طرح درس رشته کامپیوتر و نرم افزار (1401-1402)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">طراحی و تدریس درس «ریاضیات برنامه‌نویسی» ویژه ی رشته‌ی کامپیوتر و نرم‌افزار</li>
+                                        <li class="text-gray-700 text-lg font-bold"> آموزش مبانی جبر خطی، مبانی مصورسازی داده‌ها و مباحث آمار و احتمال مرتبط با تحلیل داده و یادگیری ماشین</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 10 دوره دوم - دبیر پژوهشی علم داده (1400-1401)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">طراحی و برگزاری دوره ی مقدماتی علم داده با محوریت پایتون</li>
+                                        <li class="text-gray-700 text-lg font-bold">آموزش مباحث پردازش داده، آمار توصیفی، مصورسازی داده‌ها، معرفی کتابخانه‌های Pandas و NumPy و کاربرد آن‌ها در تحلیل داده و مفاهیم یادگیری ماشین</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 7 دوره دوم - دبیر کامپیوتر رشته کامپیوتر و نرم افزار (1400-1401)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">آموزش مبانی برنامه نویسی و تفکر الگوریتمی</li>
+                                        <li class="text-gray-700 text-lg font-bold">آموزش مبانی برنامه نویسی پایتون و مفاهیم شی گرایی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 7 دوره دوم - مربی پژوهشی کامپیوتر (1399-1400)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">آموزش HTML و CSS و طراحی صفحات پویا به کمک فریمورک ReactJS</li>
+                                        <li class="text-gray-700 text-lg font-bold">منتورینگ دانش‌آموزان در مسیر طراحی و ساخت یک وب‌سایت</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دبیرستان علامه حلی 7 دوره دوم - مربی پژوهشی کامپیوتر (1398-1399)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">تدریس زبان برنامه‌نویسی ++C</li>
+                                        <li class="text-gray-700 text-lg font-bold">منتورینگ پروژه‌های دانش‌آموزان جهت شرکت در نمایشگاه داخلی مدرسه</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <div class="flex flex-col w-full p-5 gap-8">
+                        <p class="text-2xl font-bold mt-5">دانشگاه تهران</p>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2"> دانشگاه تهران، دانشکده جغرافیا - برگزارکننده و مدرس دوره برنامه نویسی پایتون (1401) </h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">آموزش مبانی یادگیری ماشین و برنامه‌نویسی پایتون، با تمرکز بر مدل‌های پایه یادگیری ماشین و کار با کتابخانه‌های Pandas و NumPy برای دانشجویان رشته جغرافیا در دانشگاه تهران</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div class="max-w-m rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div class="py-6 px-10">
+                                    <h2 class="text-xl font-bold mb-2">دانشگاه تهران، دانشکده جغرافیا - برگزارکننده و مدرس دوره مقدمات یادگیری ماشین (1401)</h2>
+                                    <ul class="list-disc">
+                                        <li class="text-gray-700 text-lg font-bold">تدریس مبانی ریاضیات و آمار مقدماتی با رویکرد کاربردی در یادگیری ماشین، شامل مفاهیم احتمال، آمار توصیفی، ماتریس‌ها، مشتق‌گیری و تحلیل داده، ویژه‌ ی دانشجویان رشته جغرافیا دانشگاه تهران</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-      </div>
-      <div class="row g-4 mt-4">
-        <div class="col-md-6">
-          <div class="card shadow-sm rounded-3">
-            <div class="card-header"><h2 id="skills" class="mt-0 mb-0 h4">مهارت ها</h2></div>
-            <div class="card-body">
-              <label for="progress1" class="form-label">پایتون و علم داده (Pandas, NumPy)</label>
-              <div class="progress" id="progress1" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-              </div>
-              
-              <label for="progress2" class="form-label mt-2">یادگیری ماشین</label>
-              <div class="progress" id="progress2" style="height: 20px;">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-              </div>
-
-              <label for="progress3" class="form-label mt-2">مصورسازی داده‌ها (Matplotlib, Seaborn)</label>
-              <div class="progress" id="progress3" style="height: 20px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-              </div>
-
-              <label for="progress4" class="form-label mt-2">Git</label>
-              <div class="progress" id="progress4" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-              </div>
-
-              <label for="progress5" class="form-label mt-2">Linux</label>
-              <div class="progress" id="progress5" style="height: 20px;">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
-              </div>
-
-              <label for="progress6" class="form-label mt-2">Golang</label>
-              <div class="progress" id="progress6" style="height: 20px;">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card shadow-sm rounded-3">
-             <div class="card-header"><h2 id="projects" class="mt-0 mb-0 h4">پروژه‌های من</h2></div>
-             <div class="card-body">
-                <p class="mb-3">اینجا چند عدد از پروژه‌های که انجام داده‌ام وجود دارد. برای اطلاعات بیشتر روی هر کدام از دکمه‌ها کلیک کنید.</p>
-                <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#co2Modal">
-                  پیشبینی آلایندگی خودروها
-                </button>
-                <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#gdpModal">
-                  آنالیز GDP کشورها
-                </button>
-                <button type="button" class="btn btn-primary m-2" data-toggle="modal" data-target="#greenModal">
-                  پیشبینی پتانسیل انرژی‌های پاک
-                </button>
-                 
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <div class="modal" id="co2Modal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h4 class="modal-title">پیشبینی میزان آلایندگی CO2 خودروها</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <div class="modal-body">
-            یک پروژه داده‌محور برای تحلیل و پیش‌بینی انتشار CO2 از خودروهای سواری لهستانی با استفاده از یادگیری ماشین و Docker/FastAPI برای توسعه آسان.
-          </div>
-
-          <div class="modal-footer">
-            <a href="https://github.com/roozman/newCarsCO2EmissionsPoland" class="btn btn-primary" target="_blank">  برو به گیت‌هاب</a>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">ببند</button>
-          </div>
 
         </div>
-      </div>
-    </div>
-
-    <div class="modal" id="gdpModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h4 class="modal-title">مصورسازی داده‌های تولید ناخالص کشورها</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <div class="modal-body">
-مصور سازی داده‌های تولید ناخالص ملی کشورها (GDP) در طی سال های 2020 تا 2025 جمع‌آوری شده از وب سایت کگل
-          </div>  
-
-          <div class="modal-footer">
-            <a href="https://www.kaggle.com/datasets/codebynadiia/gdp-per-country-20202025" class="btn btn-primary" target="_blank">  برو به کگل</a>
-            <a href="https://github.com/roozman/2020-2025-GDP-Data-Visualization-and-Insights" class="btn btn-primary" target="_blank">  برو به گیت‌هاب</a>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">ببند</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  
-    <div class="modal" id="greenModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h4 class="modal-title">تحلیل پتانسیل بهره‌برداری از انرژی‌های پاک</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <div class="modal-body">
-            در این پروژه با بررسی داده‌های جغرافیایی ثبت شده در اتحادیه اروپا (داده‌های خورشیدی، بادی و بیوسوختی) تلاش بر این بود تا ارتباط بین پتانسیل تولید انرژی بادی و خورشیدی با یکدیگر بررسی شود.
-          </div>
-
-          <div class="modal-footer">
-            <a href="https://github.com/roozman/EuropeanGreenEnergyDataAnalysisAndPrediction" class="btn btn-primary" target="_blank">  برو به گیت‌هاب</a>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">ببند</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </body>
+</body>
 </html>
